@@ -1,16 +1,43 @@
-# React + Vite
+# 🎯 Hunted Jobs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://huntedjobs.vercel.app/)
+[![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](#)
+[![Vite](https://img.shields.io/badge/Vite-B73BFE?style=flat&logo=vite&logoColor=FFD62E)](#)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](#)
 
-Currently, two official plugins are available:
+A lightweight, modern React job board application that allows users to browse, search, and filter remote job listings with ease.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[View Live Demo](https://huntedjobs.vercel.app/)**
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Search & Filter:** Easily find jobs by keyword or use the horizontally scrollable category pills.
+- **Skeleton Loading:** Smooth UI experience with skeleton loaders while fetching job data.
+- **Responsive Design:** Fully responsive and styled with Tailwind CSS for mobile and desktop viewing.
+- **Custom Hooks:** Clean data fetching logic separated into a reusable `useFetch` hook.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework:** React + Vite
+- **Styling:** Tailwind CSS
+- **Icons:** React Icons
+- **Deployment:** Vercel
+
+## Project Structure
+
+```text
+src/
+├── assets/              # Static images and icons
+├── components/
+│   ├── CategoryFilter.jsx # Horizontal scrollable category pills
+│   ├── JobCard.jsx        # Individual job listing card
+│   ├── JobList.jsx        # Renders list of JobCards
+│   ├── JobSkeleton.jsx    # Loading skeleton for job cards
+│   └── Search.jsx         # Search input component
+├── constants/
+│   └── constant.js        # Job categories and static data
+├── hooks/
+│   └── useFetch.js        # Custom hook for data fetching
+├── App.jsx              # Main application root
+└── main.jsx             # Entry point
+```
