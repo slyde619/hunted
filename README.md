@@ -1,4 +1,4 @@
-# 🎯 Hunted Jobs
+# Hunted Jobs
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://huntedjobs.vercel.app/)
 [![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](#)
